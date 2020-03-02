@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  NotificationCenterDemo
+//
+//  Created by keyser_soz on 2020/3/2.
+//  Copyright © 2020 keyser_soz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "KSNotificationCenter.h"
+
+#if DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s\n",[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil;
+#endif
+
+
+#endif /* PrefixHeader_pch */

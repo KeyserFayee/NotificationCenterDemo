@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KSNotificationCenter : NSObject
 
-+ (KSNotificationCenter *)defaultCenter;
+@property (class, readonly, strong) KSNotificationCenter *defaultCenter;
 //添加
 - (void)addObserver:(id)observer selector:(SEL)aSelector name:(nullable NSString *)aName object:(nullable id)anObject;
 - (id<NSObject>)addObserverForName:(nullable NSString *)name object:(nullable id)obj queue:(nullable NSOperationQueue *)queue usingBlock:(void (^)(KSNotification *note))block;

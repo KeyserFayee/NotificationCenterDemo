@@ -57,6 +57,7 @@
 		FB77D20B240D142300E3DC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB77D218240D14CA00E3DC28 /* KSNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSNotificationCenter.m; sourceTree = "<group>"; };
 		FB77D219240D14CA00E3DC28 /* KSNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSNotificationCenter.h; sourceTree = "<group>"; };
+		FB77D21C240D228F00E3DC28 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 				FB77D1F0240D142300E3DC28 /* LaunchScreen.storyboard */,
 				FB77D1F3240D142300E3DC28 /* Info.plist */,
 				FB77D1F4240D142300E3DC28 /* main.m */,
+				FB77D21C240D228F00E3DC28 /* PrefixHeader.pch */,
 			);
 			path = NotificationCenterDemo;
 			sourceTree = "<group>";
@@ -455,6 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TUX63H4XEY;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NotificationCenterDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = NotificationCenterDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,6 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TUX63H4XEY;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NotificationCenterDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = NotificationCenterDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
